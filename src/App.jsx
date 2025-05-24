@@ -44,7 +44,7 @@ setconvertedAmount (amount * curencyinfo[to])
                                 label="From"
                                 amount={amount}
                                 currencyOption={option}
-                                onCurrencyChange={(currency)=>setamount(amount)}
+                                onCurrencyChange={(currency)=>setfrom(currency)}
                                 selectCurrency={from} 
                                 onAmountChnage={(amount)=>setamount(amount)}
                             />
@@ -53,7 +53,7 @@ setconvertedAmount (amount * curencyinfo[to])
                             <button
                                 type="button"
                                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
-                                onClick={swap}
+                                onClick={swap} 
                             >
                                 swap
                             </button>
@@ -64,7 +64,7 @@ setconvertedAmount (amount * curencyinfo[to])
                                 amount={convertedAmount}
                                 currencyOption={option}
                                 onCurrencyChange={(currency)=>setTo(currency) }
-                                selectCurrency={from}
+                                selectCurrency={to}
                                 amountDisable
                                 
                             />
